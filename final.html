@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Transition for links and buttons */
+        a, button {
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        a:hover {
+            color: #63b3ed; /* Hover color for links */
+            transform: scale(1.05);
+        }
+
+        /* Hover effect for buttons */
+        button:hover {
+            background-color: #2b6cb0; /* Darker shade of blue for buttons */
+            transform: scale(1.05);
+        }
+
+        /* Transition effect for images */
+        .portfolio-image:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header with Navigation -->
+    <header class="bg-blue-600 text-white py-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <h1 class="text-4xl font-bold">OM RAJESHUKUMAR RAJPUT</h1>
+                <p class="text-lg">Web Developer | Designer | Creator</p>
+            </div>
+            <nav class="space-x-6">
+                <a href="#about" class="hover:text-blue-200">About</a>
+                <a href="#portfolio" class="hover:text-blue-200">Portfolio</a>
+                <a href="#skills" class="hover:text-blue-200">Skills</a>
+                <a href="#contact" class="hover:text-blue-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-8 bg-white shadow-md">
+        <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+            <img src="myphoto.jpg" alt="Your Photo" class="w-40 h-40 rounded-full shadow-md mx-auto md:mx-0 md:mr-8">
+            <div class="text-center md:text-left mt-4 md:mt-0">
+                <h2 class="text-3xl font-bold text-blue-600">About Me</h2>
+                <p class="mt-4 text-gray-700 text-lg">Hello! I'm OM, a passionate web developer with experience in creating dynamic and user-friendly websites. I love coding, designing, and bringing ideas to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects/Portfolio Gallery -->
+    <section id="portfolio" class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-600 text-center">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="event.webp" alt="Project 1" class="w-full h-48 object-cover portfolio-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-blue-600">Event Landing Page</h3>
+                        <p class="text-gray-700 mt-2">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="taj-mahal.webp" alt="Project 2" class="w-full h-48 object-cover portfolio-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-blue-600">Travel Website</h3>
+                        <p class="text-gray-700 mt-2">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="NGO..webp" alt="Project 3" class="w-full h-48 object-cover portfolio-image">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-blue-600">Charity/NGO Website</h3>
+                        <p class="text-gray-700 mt-2">A brief description of the project goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-8 bg-white shadow-md">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-600">My Skills</h2>
+            <ul class="mt-6 text-gray-700 text-lg">
+                <li>✔️ HTML, CSS, JavaScript</li>
+                <li>✔️ React, Vue.js</li>
+                <li>✔️ Node.js, Express</li>
+                <li>✔️ Python, Django</li>
+                <li>✔️ UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-8 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-600 text-center">Contact Me</h2>
+            <form class="mt-6 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name:</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg mb-4" placeholder="Your Name">
+
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email:</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg mb-4" placeholder="Your Email">
+
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message:</label>
+                <textarea id="message" class="w-full px-4 py-2 border rounded-lg mb-4" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold w-full">Send Message</button>
+            </form>
+
+            <!-- Social Links -->
+            <div class="text-center mt-6">
+                <h3 class="text-lg font-bold text-blue-600">Follow Me</h3>
+                <div class="flex justify-center space-x-4 mt-4">
+                    <a href="https://www.linkedin.com/in/om-rajput-3991302ba/" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+                    <a href="https://github.com/omrajput0907" class="text-blue-600 hover:text-blue-800">GitHub</a>
+                    <a href="https://www.instagram.com/__rajput_om__/" class="text-blue-600 hover:text-blue-800">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 OM RAJPUT. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
