@@ -1,1 +1,1 @@
-This is a normal project with i have make for fun 
+This is a normal project which i made for just fun
